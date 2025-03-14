@@ -84,13 +84,13 @@ The Linux filesystem starts at the root directory, denoted by a single slash ```
 - ```/mnt```: Similar to ```/media```, this is a traditional mount point where system administrators can mount temporary filesystems while using or configuring them.  
 - ```/opt```: Intended for the installation of add-on application software packages. Large software packages that are not part of the default installation can be placed here to avoid cluttering the system directories.  
 - ```/proc```: A virtual and dynamic directory as it only exists in memory. It does not use disk space. It contains information about system resources, hardware, and running processes. It,s a pseudo-filesystem that provides an interface to kernel data structures.  
-                Example: 
+                Example:  
                         - ```cat /proc/cpuinfo```  
                         - ```cat /proc/meminfo```
                                 
 - ```/run```: A temporary filesyste that stores transiesnt state files, like process ID,s or lock files, since it is cleared and recreated at every boot.   
-  - ```/sbin```: Contains binary (executable) files that are mostly needed by the system administrator. These include system management commands like ```fdisk``` , ```shutdown``` , ```ip``` etc.  
-                Example:
+- ```/sbin```: Contains binary (executable) files that are mostly needed by the system administrator. These include system management commands like ```fdisk``` , ```shutdown``` , ```ip``` etc.  
+                Example:  
                         - ```ls sbin/ | grep fdisk```  
                         - ```ls bin/ | grep fdisk```
 - ```/srv```: Contains data which servers hosted on the system may need, such as web pages served by a web server.  
