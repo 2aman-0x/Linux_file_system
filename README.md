@@ -78,7 +78,8 @@ The Linux filesystem starts at the root directory, denoted by a single slash ```
 - ```/var```: Where variable data such as logs and databases are stored.  
 - ```/tmp```:Temporary files created by system and users.  
 - ```/boot```: Holds files needed for system boot-up, including the linux kernel, an initial RAM disk image, bootloader configuration (like GRUB).  
-- ```/dev```: This directory contains device files which represent and provide access to hardware devices such as hard drives, sounds devices etc.  
+- ```/dev```: This directory contains device files which represent and provide access to hardware devices such as hard drives, sounds devices etc.
+                Example: ```df -h```  
 - ```/lib```, ```/lib64```: These directories contain essential shared libraries and kernel modules that are needed to boot the system and run the commands in the root filesystem. The ```/lib64``` directory exists on systems that support 64-bit applications.  
 - ```/media```: This is the mount point for removal media such as USB drivers, CD-ROMs, etc. When these devices are mounted, typically, directories corresponding to their mount points are created within ```/media```.  
 - ```/mnt```: Similar to ```/media```, this is a traditional mount point where system administrators can mount temporary filesystems while using or configuring them.  
