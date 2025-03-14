@@ -89,7 +89,7 @@ The Linux filesystem starts at the root directory, denoted by a single slash ```
                         - ```cat /proc/cpuinfo```  
                         - ```cat /proc/meminfo```
                                 
-- ```/run```: A temporary filesyste that stores transiesnt state files, like process ID,s or lock files, since it is cleared and recreated at every boot.   
+- ```/run```: A temporary filesystem that stores transiesnt state files, like process ID,s or lock files, since it is cleared and recreated at every boot.   
 - ```/sbin```: Contains binary (executable) files that are mostly needed by the system administrator. These include system management commands like ```fdisk``` , ```shutdown``` , ```ip``` etc.  
                 Example:  
                         - ```ls sbin/ | grep fdisk```  
