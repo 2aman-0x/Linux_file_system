@@ -72,32 +72,61 @@ The Linux filesystem starts at the root directory, denoted by a single slash ```
 
 - ```/bin```: Contains essential user binaries (executables)/code/logic, such as common command like ```ls```, ```cp```, etc.  
 - ```/etc```: This is similar like windows's C drives program file. Holds system configuration files.  
-                Example: User, Network, Services, System Apps  
+
+  Example:
+  
+            /etc/passwd Information about user account
+            /etc/group  Information about Group
+            /etc fstab Infomation about file system mounting
+            /etc/hostname Name of the System    
+         
 - ```/home```: Contains the personal directories of all users.  
 - ```/root```:The home directory for the root user(administrator).  
-- ```/var```: Where variable data such as logs and databases are stored.  
+- ```/var```: Where variable data such as logs and databases are stored.
+Example:
+
+         /var/log Collect,s log files about system.  
+         /var/spool Collect,s data about printers and mail servers.  
+         /var/www Collects data about web server.  
+         
 - ```/tmp```:Temporary files created by system and users.  
 - ```/boot```: Holds files needed for system boot-up, including the linux kernel, an initial RAM disk image, bootloader configuration (like GRUB).  
 - ```/dev```: This directory contains device files which represent and provide access to hardware devices such as hard drives, sounds devices etc.  
-                Example: ```df -h```  
+                Example: ```df -h```
+
+         /dev/sda -> First Hardisk
+         /dev/tty -> Terminal Device
+         /dev/null -> For discarding data
+
+  
 - ```/lib```, ```/lib64```: These directories contain essential shared libraries and kernel modules that are needed to boot the system and run the commands in the root filesystem. The ```/lib64``` directory exists on systems that support 64-bit applications.  
 - ```/media```: This is the mount point for removal media such as USB drivers, CD-ROMs, etc. When these devices are mounted, typically, directories corresponding to their mount points are created within ```/media```.  
-- ```/mnt```: Similar to ```/media```, this is a traditional mount point where system administrators can mount temporary filesystems while using or configuring them.  
+- ```/mnt```: Similar to ```/media```, this is a traditional mount point where system administrators can mount temporary filesystems while using or configuring them.
+
+         mount /dev/sdb1 /mnt -> /dev/sdb1 will mounted to/mnt folder
+
+  
 - ```/opt```: Intended for the installation of add-on application software packages. Large software packages that are not part of the default installation can be placed here to avoid cluttering the system directories.  
 - ```/proc```: A virtual and dynamic directory as it only exists in memory. It does not use disk space. It contains information about system resources, hardware, and running processes. It,s a pseudo-filesystem that provides an interface to kernel data structures.  
-                Example:  
-                        - ```cat /proc/cpuinfo```  
-                        - ```cat /proc/meminfo```
+  Example:
+  
+                        cat /proc/cpuinfo -> Information about CPU
+                        cat /proc/meminfo -> Infomation about memory
                                 
 - ```/run```: A temporary filesystem that stores transiesnt state files, like process ID,s or lock files, since it is cleared and recreated at every boot.   
 - ```/sbin```: Contains binary (executable) files that are mostly needed by the system administrator. These include system management commands like ```fdisk``` , ```shutdown``` , ```ip``` etc.  
-                Example:  
-                        - ```ls sbin/ | grep fdisk```  
-                        - ```ls bin/ | grep fdisk```
+                Example:
+   
+                        ls sbin/ | grep fdisk
+                        ls bin/ | grep fdisk
+  
 - ```/srv```: Contains data which servers hosted on the system may need, such as web pages served by a web server.  
 - ```/sys```: Similar to ```/proc```, this is another virtual filesystem that provides an interface to the kernal, It contains information and settings about the system's devices.  
-Example:  
-   - ``` cat /sys/class/block/sda/size```
-   - ``` cat /sys/class/block/sda1/size```
+
+  Example:
+  
+        cat /sys/class/block/sda/size
+        cat /sys/class/block/sda1/size
+
 - ```/usr```: usr full form is Unix System Resource. Considered the secondary hierarchy because it contains all user applications and a variety of other things for day-to-day operations, including libraries, documentation, and much more. Subdirectories include ```/usr/bin```, ```/usr/local``` and ```/usr/share```/ among others.
 
