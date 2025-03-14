@@ -97,7 +97,7 @@ The Linux filesystem starts at the root directory, denoted by a single slash ```
 - ```/srv```: Contains data which servers hosted on the system may need, such as web pages served by a web server.  
 - ```/sys```: Similar to ```/proc```, this is another virtual filesystem that provides an interface to the kernal, It contains information and settings about the system's devices.  
 Example:  
-- ``` cat /sys/class/block/sda/size```
-- ``` cat /sys/class/block/sda1/size```
+   - ``` cat /sys/class/block/sda/size```
+   - ``` cat /sys/class/block/sda1/size```
 - ```/usr```: usr full form is Unix System Resource. Considered the secondary hierarchy because it contains all user applications and a variety of other things for day-to-day operations, including libraries, documentation, and much more. Subdirectories include ```/usr/bin```, ```/usr/local``` and ```/usr/share```/ among others.
 
