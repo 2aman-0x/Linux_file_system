@@ -66,6 +66,8 @@ example: ```ls -li```
 
 ## File System in details  
 
+[Linux-file-structure](linux-directory-structure.png)
+
 The Linux filesystem starts at the root directory, denoted by a single slash ```/```, from which all other files and directories branch out.  
 
 - ```/bin```: Contains essential user binaries (executables)/code/logic, such as common command like, cp, etc.  
