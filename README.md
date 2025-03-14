@@ -71,7 +71,7 @@ example: ```ls -li```
 The Linux filesystem starts at the root directory, denoted by a single slash ```/```, from which all other files and directories branch out.  
 
 - ```/bin```: Contains essential user binaries (executables)/code/logic, such as common command like ```ls```, ```cp```, etc.  
-- ```/etc```: Holds system configuration files.  
+- ```/etc```: This is similar like windows's C drives program file. Holds system configuration files.  
                         Example: User, Network, Services, System Apps  
 - ```/home```: Contains the personal directories of all users.  
 - ```/root```:The home directory for the root user(administrator).  
