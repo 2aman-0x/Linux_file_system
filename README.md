@@ -21,7 +21,7 @@ The root ```(/)``` of the filesystem is at the top of the tree, and the followin
 ---
 
 
-## Linux file system stores data in hierarchy of directories and files.
+### Linux file system stores data in hierarchy of directories and files.
 
 Location/path format  
 - Windows  
