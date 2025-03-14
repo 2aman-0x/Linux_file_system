@@ -17,3 +17,81 @@ The root ```(/)``` of the filesystem is at the top of the tree, and the followin
 ```/tmp```: Contains temporary file created by system and user processes.  
 ```/usr```: Contains user binaries, libraries, documentation and other files.  
 ```/var```: Contains variable files, such as log files, email and temporary files used by system and user processes.
+
+---
+
+
+## Linux file system stores data in hierarchy of directories and files.
+
+Location/path format  
+- Windows  
+        - ```C:\Program Files\Java```  
+- Linux   
+        - ```/home/centos/Desktop```  
+
+__Types of File System__
+- ext3  (Third Extended File System)
+- ext4  (Fourth Extended File System)
+- XFS  (Extended File System)
+        - [Ubuntu, Debian, Fedora, CentOS, RedHat]  
+- BtrFS (B-Tree FS)  
+        - [OpenSUSE and SUSE linux Enterprise Server]  
+- FAT   (File Allocation Table)
+- vFAT  (Virtual File Allocation Table)
+- squashFS ( Squashed File System, compressed read-only file system )
+
+__How to check Linux File System?__
+- ```lsblk -f```  
+- ```df -Th```  
+- ```cat /etc/fstab```  
+
+
+## XFS vs EXT4:
+- XFS  
+Optimized for large files and volumes, offering superior
+performance and scalability.
+
+- EXT4  
+- Performs well across various file sizes but less efficient with extremely large files.  
+
+For high-throughput and extensive parellel processing capabilities, XFS is typically more effecyive than ext4.  
+
+
+## What is inode?  
+An inode in Linux is a data structure that stores metadata about a file or directory.  
+The filesystem uses the inode number to locate the inode, which then contains pointers to the data blocks here the actual file data is stored.    
+example: ```ls -li```  
+
+---
+
+## File System in details  
+
+The Linux filesystem starts at the root directory, denoted by a single slash ```/```, from which all other files and directories branch out.  
+
+- ```/bin```: Contains essential user binaries (executables)/code/logic, such as common command like, cp, etc.  
+- ```/etc```: Holds system configuration files.  
+                        Example: User, Network, Services, System Apps  
+- ```/home```: Contains the personal directories of all users.  
+- ```/root```:The home directory for the root user(administrator).  
+- ```/var```: Where variable data such as logs and databases are stored.  
+- ```/tmp```:Temporary files created by system and users.  
+- ```/boot```: Holds files needed for system boot-up, including the linux kernel, an initial RAM disk image, bootloader configuration (like GRUB).  
+- ```/dev```: This directory contains device files which represent and provide access to hardware devices such as hard drives, sounds devices etc.  
+- ```/lib```, ```/lib64```: These directories contain essential shared libraries and kernel modules that are needed to boot the system and run the commands in the root filesystem. The /lib64 directory exists on systems that support 64-bit applications.  
+- ```/media```: This is the mount point for removal media such as USB drivers, CD-ROMs, etc. When these devices are mounted, typically, directories corresponding to their mount points are created within ```/media```.  
+- ```/mnt```: Similar to ```/media```, this is a traditional mount point where system administrators can mount temporary filesystems while using or configuring them.  
+- ```/opt```: Intended for the installation of add-on application software packages. Large software packages that are not part of the default installation can be placed here to avoid cluttering the system directories.  
+- ```/proc```: A virtual and dynamic directory as it only exists in memory. It does nto use disk space. It contains information about system resources, hardware, and running processes. It,s a pseudo-filesystem that provides an interface to kernel data structures.  
+                Example: 
+                        - ```cat /proc/cpuinfo```  
+                        - ```cat /proc/meminfo```
+                                
+- ```/run```: A temporary filesyste that stores transiesnt state files, like process ID,s or lock files, since it is cleared and recreated at every boot.   
+  - ```/sbin```: Contains binary (executable) files that are mostly needed by the system administrator. These include system management commands like ```fdisk``` , ```shutdown``` , ```ip``` etc.  
+                Example:
+                        - ```ls sbin/ | grep fdisk```  
+                        - ```ls bin/ | grep fdisk```
+- ```/srv```: Contains data which servers hosted on the system may need, such as web pages served by a web server.  
+- ```/sys```: Similar to ```/proc```, this is another virtual filesystem that provides an interface to the kernal, It contains information and settings about the system's devices.
+- ```/usr```: usr full form is Unix System Resource. Considered the secondary hierarchy because it contains all user applications and a variety of other things for day-to-day operations, including libraries, documentation, and much more. Subdirectories include ```/usr/bin```, ```/usr/local``` and ```/usr/share```/ among others.
+
