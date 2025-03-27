@@ -1,4 +1,4 @@
-[linux-File-System](./linux-file-system.png)
+<img src="linux-file-system.png" width="700" title="Forensic Image" >
 
 ---
 The root ```(/)``` of the filesystem is at the top of the tree, and the following are the most important subdirectories to know:  
@@ -66,7 +66,7 @@ example: ```ls -li```
 
 ## File System in details  
 
-[Linux-file-structure](linux-directory-structure.png)
+<img src="linux-directory-structure.png" width="700" title="Forensic Image" >
 
 The Linux filesystem starts at the root directory, denoted by a single slash ```/```, from which all other files and directories branch out.  
 
