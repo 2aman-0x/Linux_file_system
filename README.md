@@ -37,7 +37,7 @@ Location/path format
 - Linux   
         - ```/home/centos/Desktop```  
 
-__Types of File System__
+### Types of File System
 - ext3  (Third Extended File System)
 - ext4  (Fourth Extended File System)
 - XFS  (Extended File System)
@@ -82,11 +82,10 @@ The Linux filesystem starts at the root directory, denoted by a single slash ```
 - ```/etc```: This is similar like windows's C drives program file. Holds system configuration files.  
 
   Example:
-  
-            /etc/passwd Information about user account
-            /etc/group  Information about Group
+- ```/etc/passwd``` Information about user account
+- ```/etc/group``` Information about Group
             /etc fstab Infomation about file system mounting
-            /etc/hostname Name of the System    
+- ```/etc/hostname``` Name of the System     
          
 - ```/home```: Contains the personal directories of all users.  
 - ```/root```:The home directory for the root user(administrator).  
