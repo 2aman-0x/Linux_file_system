@@ -81,12 +81,14 @@ The Linux filesystem starts at the root directory, denoted by a single slash ```
 - ```/bin```: Contains essential user binaries (executables)/code/logic, such as common command like ```ls```, ```cp```, etc.  
 - ```/etc```: This is similar like windows's C drives program file. Holds system configuration files.  
 
-  Example:
+  __Example:__  
 - ```/etc/passwd``` Information about user account
 - ```/etc/group``` Information about Group
-            /etc fstab Infomation about file system mounting
+- ```/etc fstab``` Infomation about file system mounting
 - ```/etc/hostname``` Name of the System     
-         
+
+---
+        
 - ```/home```: Contains the personal directories of all users.  
 - ```/root```:The home directory for the root user(administrator).  
 - ```/var```: Where variable data such as logs and databases are stored.
