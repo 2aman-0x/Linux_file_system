@@ -93,6 +93,7 @@ __Example:__
 - ```/home```: Contains the personal directories of all users.  
 - ```/root```:The home directory for the root user(administrator).  
 - ```/var```: Where variable data such as logs and databases are stored.  
+
 Example:
 
          /var/log Collect,s log files about system.  
@@ -118,7 +119,8 @@ Example:
   
 - ```/opt```: Intended for the installation of add-on application software packages. Large software packages that are not part of the default installation can be placed here to avoid cluttering the system directories.  
 - ```/proc```: A virtual and dynamic directory as it only exists in memory. It does not use disk space. It contains information about system resources, hardware, and running processes. It,s a pseudo-filesystem that provides an interface to kernel data structures.  
-  Example:
+
+Example:
   
                         cat /proc/cpuinfo -> Information about CPU
                         cat /proc/meminfo -> Infomation about memory
