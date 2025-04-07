@@ -1,5 +1,11 @@
 source : [here](https://youtu.be/IyKWSc7s760?si=iNNylxO6qR_nOdNU)
 
+## What is File System?
+
+Operating System stores and manage data on disk or partitions using a structure called __Filesystem__.  
+
+__FileSystem__ includes files, directories and it's related permissions.
+
 <img src="linux-file-system.png" width="700" title="Forensic Image" >
 
 ---
