@@ -92,7 +92,7 @@ __Example:__
         
 - ```/home```: Contains the personal directories of all users.  
 - ```/root```:The home directory for the root user(administrator).  
-- ```/var```: Where variable data such as logs and databases are stored.
+- ```/var```: Where variable data such as logs and databases are stored.  
 Example:
 
          /var/log Collect,s log files about system.  
